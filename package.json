@@ -4,7 +4,8 @@
   "description": "The Odin Project - Restaurant Project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "",
   "license": "ISC",
