@@ -1,7 +1,7 @@
 import './styles.css';
-import { Homebutton, loadHome } from './home.js';
-import { Menubutton } from './menu.js';
-import { Aboutbutton } from './about.js';
+import { Homebutton, loadHome } from './modules/home.js';
+import { Menubutton } from './modules/menu.js';
+import { Aboutbutton } from './modules/about.js';
 
 const contentDiv = document.querySelector('#content');
 
