@@ -1,3 +1,27 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import url(https://fonts.bunny.net/css?family=allerta-stencil:400);
+
 body {
-    background-color: red;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: rgb(112, 114, 113);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+header {
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+#content {
+    background: url('./img/sushi1.jpg') no-repeat center center / contain;
 }
