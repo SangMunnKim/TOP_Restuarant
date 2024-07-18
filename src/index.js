@@ -1,13 +1,15 @@
 import './styles.css';
-import {button, loadHome} from './home';
+import { Homebutton, loadHome } from './home.js';
+import { Menubutton } from './menu.js';
+import { Aboutbutton } from './about.js';
 
-const content = document.querySelector('#content');
-
-
+const contentDiv = document.querySelector('#content');
 
 init();
 
-
 function init() {
-  loadHome(content);
+  loadHome(contentDiv);
+  Homebutton;
+  Menubutton;
+  Aboutbutton;
 }

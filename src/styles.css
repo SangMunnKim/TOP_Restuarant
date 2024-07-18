@@ -27,6 +27,7 @@ nav {
     justify-content: center;
 
     background-size: contain;
+    background-position: center;
     margin: 1em;
     padding: 1em;
     color: white;

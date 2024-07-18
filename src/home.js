@@ -2,7 +2,7 @@ import sushiImage from './img/sushi1.jpg';
 
 const homeButton = document.getElementById('home');
 
-const button = document.addEventListener('click', (e) => {
+const Homebutton = document.addEventListener('click', (e) => {
     if (e.target === homeButton) {
         loadHome(content);
     }
@@ -27,9 +27,10 @@ function loadHome(div) {
     div.style.backgroundImage = `url(${sushiImage})`;
     if (div) {
         div.appendChild(createHome());
+        div.style.color = 'white';
     } else {
         console.error('Content element not found!');
     }
 }
 
-export {button, loadHome};
+export { Homebutton, loadHome };
