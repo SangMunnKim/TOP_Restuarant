@@ -1,4 +1,4 @@
-import sushiImage from './img/sushi3.jpg';
+import sushiImage from '../img/sushi3.jpg';
 
 const aboutButton = document.getElementById('about');
 
