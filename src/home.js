@@ -1,3 +1,13 @@
+import sushiImage from './img/sushi1.jpg';
+
+const homeButton = document.getElementById('home');
+
+const button = document.addEventListener('click', (e) => {
+    if (e.target === homeButton) {
+        loadHome(content);
+    }
+});
+
 function createHome() {
     const home = document.createElement('div');
     const heading = document.createElement('h1');
@@ -12,4 +22,14 @@ function createHome() {
     return home;
 }
 
-export default createHome;
+function loadHome(div) {
+    div.innerHTML = '';
+    div.style.backgroundImage = `url(${sushiImage})`;
+    if (div) {
+        div.appendChild(createHome());
+    } else {
+        console.error('Content element not found!');
+    }
+}
+
+export {button, loadHome};

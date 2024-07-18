@@ -33,6 +33,15 @@ nav {
     border: 1px solid #ccc;
 }
 
+button {
+    background-color: rgb(226, 142, 142);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* #content {
     background: url('./img/sushi1.jpg') no-repeat center center / contain;
 } */
