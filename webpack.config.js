@@ -3,9 +3,9 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
+  mode: 'development',
   plugins : [
     new HTMLWebpackPlugin({
-        title: 'main.[contenthash].js',
         template: 'src/index.html',
     }),
   ], 
@@ -14,4 +14,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  module: {
+    rules : [
+        {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+        }
+    ]
+  }
 };
