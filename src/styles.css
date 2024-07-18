@@ -23,5 +23,16 @@ nav {
 }
 
 #content {
-    background: url('./img/sushi1.jpg') no-repeat center center / contain;
+    display: flex;
+    justify-content: center;
+
+    background-size: contain;
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    border: 1px solid #ccc;
 }
+
+/* #content {
+    background: url('./img/sushi1.jpg') no-repeat center center / contain;
+} */
